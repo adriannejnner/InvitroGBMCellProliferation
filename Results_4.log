@@ -1,4 +1,4 @@
-Using config file Results_0\config.xml ... 
+Using config file Results_4\config.xml ... 
 User parameters in XML config file: 
 Bool parameters:: 
 
@@ -21,7 +21,7 @@ virus_replication_rate: 0.0081 [1/min]
 virus_burst_number: 6600 [virus]
 pmax: 0.0125 [virus]
 viral_decay_from_burst_cell: 0.1466 [virus]
-GBM_cell_proliferation_rate: 0.000624862 [1/min]
+GBM_cell_proliferation_rate: 0.000169323 [1/min]
 chemokine_secretion_rate: 0.0417 [1/min]
 chemokine_secretion_rate: 0.0417 [1/min]
 TH_prolif_increase_due_to_stimulus: 5 [dimensionless]
@@ -91,32 +91,32 @@ Using PhysiCell version 1.6.0
 See ALL_CITATIONS.txt for this list.
 current simulated time: 0 min (max: 120 min)
 total agents: 1255
-interval wall time: 0 days, 0 hours, 0 minutes, and 2.01e-05 seconds 
-total wall time: 0 days, 0 hours, 0 minutes, and 2.79e-05 seconds 
+interval wall time: 0 days, 0 hours, 0 minutes, and 2.09e-05 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 2.88e-05 seconds 
 
 
 Using method diffusion_decay_solver__constant_coefficients_LOD_2D (2D LOD with Thomas Algorithm) ... 
 
 current simulated time: 30 min (max: 120 min)
-total agents: 1279
-interval wall time: 0 days, 0 hours, 0 minutes, and 5.50806 seconds 
-total wall time: 0 days, 0 hours, 0 minutes, and 5.50809 seconds 
+total agents: 1259
+interval wall time: 0 days, 0 hours, 0 minutes, and 5.28403 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 5.28406 seconds 
 
 current simulated time: 60 min (max: 120 min)
-total agents: 1298
-interval wall time: 0 days, 0 hours, 0 minutes, and 6.49164 seconds 
-total wall time: 0 days, 0 hours, 0 minutes, and 11.9997 seconds 
+total agents: 1259
+interval wall time: 0 days, 0 hours, 0 minutes, and 5.22913 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 10.5132 seconds 
 
 current simulated time: 90 min (max: 120 min)
-total agents: 1320
-interval wall time: 0 days, 0 hours, 0 minutes, and 6.80251 seconds 
-total wall time: 0 days, 0 hours, 0 minutes, and 18.8023 seconds 
+total agents: 1270
+interval wall time: 0 days, 0 hours, 0 minutes, and 5.23521 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 15.7484 seconds 
 
 current simulated time: 120 min (max: 120 min)
-total agents: 1337
-interval wall time: 0 days, 0 hours, 0 minutes, and 6.90126 seconds 
-total wall time: 0 days, 0 hours, 0 minutes, and 25.7035 seconds 
+total agents: 1274
+interval wall time: 0 days, 0 hours, 0 minutes, and 5.37043 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 21.1189 seconds 
 
 
 Total simulation runtime: 
-0 days, 0 hours, 0 minutes, and 25.8129 seconds 
+0 days, 0 hours, 0 minutes, and 21.2153 seconds 

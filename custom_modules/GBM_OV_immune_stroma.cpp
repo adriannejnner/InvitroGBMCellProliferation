@@ -454,7 +454,7 @@ void setup_tissue_circle_immune( void )
 	speed_vec[11] = 1;
 				
 	//UNPROLIFERATIVE TH CELLS
-	///*
+	/*
 	x = -18.0725;
 	y = 922.2948;
 	pCell = create_cell( TH_cell );
@@ -466,7 +466,7 @@ void setup_tissue_circle_immune( void )
 	pCell = create_cell( TH_cell );
 	pCell->assign_position( x , y , 0.0 );
 	pCell-> phenotype.cycle.data.current_phase_index = 0;
-	//*/
+	//
     x = -115.9499;
 	y = -349.9367;
 	pCell = create_cell( TH_cell );
@@ -484,7 +484,7 @@ void setup_tissue_circle_immune( void )
 	pCell = create_cell( TH_cell );
 	pCell->assign_position( x , y , 0.0 );
 	pCell-> phenotype.cycle.data.current_phase_index = 0;
-	//*/
+	//
 	x = -292.5135;
 	y = -91.2428;
 	pCell = create_cell( TH_cell );
@@ -544,7 +544,7 @@ void setup_tissue_circle_immune( void )
 	pCell = create_cell( TH_cell );
 	pCell->assign_position( x , y , 0.0 );
 	pCell-> phenotype.cycle.data.current_phase_index = 0;
-	//*/
+	//
 	x = 134.3949;
 	y = 347.2437;
 	pCell = create_cell( TH_cell );
@@ -580,7 +580,7 @@ void setup_tissue_circle_immune( void )
 	pCell = create_cell( TH_cell );
 	pCell->assign_position( x , y , 0.0 );
 	pCell-> phenotype.cycle.data.current_phase_index = 0;
-	//*/
+	//
 	x = -170.1507;
 	y = -132.5528;
 	pCell = create_cell( TH_cell );
@@ -628,7 +628,7 @@ void setup_tissue_circle_immune( void )
 	pCell = create_cell( TH_cell );
 	pCell->assign_position( x , y , 0.0 );
 	pCell-> phenotype.cycle.data.current_phase_index = 0;
-	//*/
+	//
 	x =  360.4622;
 	y = 228.2000;
 	pCell = create_cell( TH_cell );
@@ -640,7 +640,7 @@ void setup_tissue_circle_immune( void )
 	pCell = create_cell( TH_cell );
 	pCell->assign_position( x , y , 0.0 );
 	pCell-> phenotype.cycle.data.current_phase_index = 0;
-	//*/
+	//
 	x = -195.5453;
 	y = -5.9414;
 	pCell = create_cell( TH_cell );
@@ -652,7 +652,7 @@ void setup_tissue_circle_immune( void )
 	pCell = create_cell( TH_cell );
 	pCell->assign_position( x , y , 0.0 );
 	pCell-> phenotype.cycle.data.current_phase_index = 0;
-	//*/
+	//
 	x =  203.4536;
 	y = -89.5478;
 	pCell = create_cell( TH_cell );
@@ -664,7 +664,7 @@ void setup_tissue_circle_immune( void )
 	pCell = create_cell( TH_cell );
 	pCell->assign_position( x , y , 0.0 );
 	pCell-> phenotype.cycle.data.current_phase_index = 0;
-	///*
+	//
 	x = -868.0050;
 	y = -405.4009;
 	pCell = create_cell( TH_cell );
@@ -689,7 +689,7 @@ void setup_tissue_circle_immune( void )
 	pCell = create_cell( TH_cell );
 	pCell->assign_position( x , y , 0.0 );
 	pCell-> phenotype.cycle.data.current_phase_index = 1;
-	//*/
+	//
 	//UNPROLIFERATIVE CTL CELLS
 	x = 27.9074;
 	y = 119.1812;
@@ -702,7 +702,7 @@ void setup_tissue_circle_immune( void )
 	pCell = create_cell( CTL_cell );
 	pCell->assign_position( x , y , 0.0 );
 	pCell-> phenotype.cycle.data.current_phase_index = 0;
-	//*/
+	//
 	x = -258.8621;
 	y =  265.2323;
 	pCell = create_cell( CTL_cell );
@@ -720,7 +720,7 @@ void setup_tissue_circle_immune( void )
 	pCell = create_cell( CTL_cell );
 	pCell->assign_position( x , y , 0.0 );
 	pCell-> phenotype.cycle.data.current_phase_index = 0;
-	//*/
+	//
 	x = -366.2289;
 	y = -332.2614;
 	pCell = create_cell( CTL_cell );
@@ -780,7 +780,7 @@ void setup_tissue_circle_immune( void )
 	pCell = create_cell( CTL_cell );
 	pCell->assign_position( x , y , 0.0 );
 	pCell-> phenotype.cycle.data.current_phase_index = 0;
-	//*/
+	//
 	x = 141.7866;
 	y = -321.7799;
 	pCell = create_cell( CTL_cell );
@@ -824,7 +824,7 @@ void setup_tissue_circle_immune( void )
 	pCell = create_cell( CTL_cell );
 	pCell->assign_position( x , y , 0.0 );
 	pCell-> phenotype.cycle.data.current_phase_index = 1;
-	//*/
+	*/
 		
 	double GBM_NO = parameters.ints("initial_GBM_cells");
 	double stroma_NO = parameters.ints("initial_stroma_cells");

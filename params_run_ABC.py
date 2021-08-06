@@ -12,7 +12,11 @@ import xml.etree.ElementTree as ET
 from shutil import copyfile
 import os
 import sys
+import glob
 import subprocess
+import numpy as np
+from pyMCDS_cells import pyMCDS_cells
+import matplotlib.pyplot as plt
 from random import seed
 from random import random
 
@@ -34,8 +38,9 @@ xml_root = tree.getroot()
 first_time = True
 output_dirs = []
 
-
-
+# load data points to compare to number of cells
+data_vec = np.array([50000, 890000, 115000, 124000, 145000])
+     
 count = 0
 while count < 50:
 
@@ -83,6 +88,30 @@ while count < 50:
         with open(log_file,"w") as outf:
             subprocess.Popen([exec_pgm, xml_file_out],stdout=outf)
           
+    # output number of cells       
+    data_dir = 'Results_'+str(count)
+    print('# data_dir = ',data_dir)
+    os.chdir(data_dir)
+    xml_files = glob.glob('output*.xml')
+    os.chdir('..')
+    xml_files.sort()
+    
+    ds_count = len(xml_files)
+    print("# ----- ds_count = ",ds_count)
+    mcds = [pyMCDS_cells(xml_files[i], data_dir) for i in range(ds_count)]
+
+    tval = np.linspace(0, mcds[-1].get_time(), ds_count)
+    print('type(tval)= ',type(tval))
+    print('tval= ',repr(tval))
+    
+    # finds cells that are cell type 2, i.e. GBM cell type, and still cycling (so not dead)
+    yval4 = np.array( [(np.count_nonzero((mcds[idx].data['discrete_cells']['cell_type'] == 2) & (mcds[idx].data['discrete_cells']['cycle_model'] < 100.) == True)) for idx in range(ds_count)] )
+    print('Number GBM cells = ',repr(yval4))       
+    
+    # calculate vector of residuals
+    residual = np.subtract(data_vec,yval4)
+    print("Residual = ", residual)
+              
     # update counter      
     count = count+1 
 

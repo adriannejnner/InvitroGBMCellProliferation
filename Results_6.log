@@ -1,0 +1,202 @@
+Using config file Results_6\config.xml ... 
+User parameters in XML config file: 
+Bool parameters:: 
+
+Int parameters:: 
+random_seed: 0 [dimensionless]
+initial_GBM_cells: 1255 [cells]
+TH_migration_speed: 4 [micron/min]
+CTL_migration_speed: 4 [micron/min]
+initial_stroma_cells: 0 [cells]
+chemokine_saturation_density: 5 [ng/micron]
+
+Double parameters:: 
+tumor_radius: 900 [micron]
+tumour_radius_initial: 1270 [micron]
+virus_saturation_density: 268.51 [virus/micron]
+initial_virus_density: 3.0248 [dimensionless]
+GBM_virus_uptake_rate: 0.002 [1/min]
+infection_threshold: 10 [1/min]
+virus_replication_rate: 0.0081 [1/min]
+virus_burst_number: 6600 [virus]
+pmax: 0.0125 [virus]
+viral_decay_from_burst_cell: 0.1466 [virus]
+GBM_cell_proliferation_rate: 0.000541277 [1/min]
+chemokine_secretion_rate: 0.0417 [1/min]
+chemokine_secretion_rate: 0.0417 [1/min]
+TH_prolif_increase_due_to_stimulus: 5 [dimensionless]
+TH_prolif_rate: 7.9026e-05 [dimensionless]
+TH_quiescent_transistion_rate: 0.00143 [dimensionless]
+CTL_prolif_rate: 7.9026e-05 [dimensionless]
+CTL_quiescent_transistion_rate: 0.00143 [dimensionless]
+CTL_prolif_increase_due_to_stimulus: 100 [dimensionless]
+max_attachment_distance: 50 [1/min]
+CTL_max_speed: 24.6 [micron/min]
+CTL_min_speed: 4 [micron/min]
+CTL_chemokine_migration_bias: 0.85 [dimensionless]
+time_to_kill_cell: 50 [dimensionless]
+stroma_virus_uptake_rate: 1 [1/min]
+stroma_radius: 7.5 [micron]
+elastic_coefficient: 0.01 [1/min]
+maximum_cell_density: 0.0039 [cell/micron]
+Chemokine_EC50: 0.005 [dimensionless]
+
+String parameters:: 
+
+
+
+Microenvironment summary: microenvironment: 
+
+Mesh information: 
+type: uniform Cartesian
+Domain: [-1500,1500] micron x [-1500,1500] micron x [-10,10] micron
+   resolution: dx = 20 micron
+   voxels: 22500
+   voxel faces: 0
+   volume: 1.8e+08 cubic micron
+Densities: (4 total)
+   oxygen:
+     units: mmHg
+     diffusion coefficient: 4 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 2e+06 micron
+     initial condition: 0 mmHg
+     boundary condition: 0 mmHg (enabled: false)
+   virus:
+     units: mmHg
+     diffusion coefficient: 1.4766 micron^2 / min
+     decay rate: 0.0029 min^-1
+     diffusion length scale: 22.5648 micron
+     initial condition: 0 mmHg
+     boundary condition: 0 mmHg (enabled: true)
+   wall:
+     units: mmHg
+     diffusion coefficient: 0 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 0 micron
+     initial condition: 0 mmHg
+     boundary condition: 0 mmHg (enabled: true)
+   chemokine:
+     units: mmHg
+     diffusion coefficient: 555.56 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 2.35703e+07 micron
+     initial condition: 0 mmHg
+     boundary condition: 0 mmHg (enabled: true)
+
+Using PhysiCell version 1.6.0
+	Please cite DOI: 10.1371/journal.pcbi.1005991
+	Project website: http://PhysiCell.MathCancer.org
+
+See ALL_CITATIONS.txt for this list.
+current simulated time: 0 min (max: 120 min)
+total agents: 1255
+interval wall time: 0 days, 0 hours, 0 minutes, and 4.2e-05 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 5.58e-05 seconds 
+
+
+Using method diffusion_decay_solver__constant_coefficients_LOD_2D (2D LOD with Thomas Algorithm) ... 
+
+current simulated time: 6 min (max: 120 min)
+total agents: 1260
+interval wall time: 0 days, 0 hours, 0 minutes, and 1.98628 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 1.98635 seconds 
+
+current simulated time: 12 min (max: 120 min)
+total agents: 1264
+interval wall time: 0 days, 0 hours, 0 minutes, and 1.71834 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 3.70469 seconds 
+
+current simulated time: 18 min (max: 120 min)
+total agents: 1267
+interval wall time: 0 days, 0 hours, 0 minutes, and 1.75604 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 5.46074 seconds 
+
+current simulated time: 24 min (max: 120 min)
+total agents: 1274
+interval wall time: 0 days, 0 hours, 0 minutes, and 1.65274 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 7.1135 seconds 
+
+current simulated time: 30 min (max: 120 min)
+total agents: 1275
+interval wall time: 0 days, 0 hours, 0 minutes, and 1.75418 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 8.86769 seconds 
+
+current simulated time: 36 min (max: 120 min)
+total agents: 1280
+interval wall time: 0 days, 0 hours, 0 minutes, and 1.69856 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 10.5663 seconds 
+
+current simulated time: 42 min (max: 120 min)
+total agents: 1283
+interval wall time: 0 days, 0 hours, 0 minutes, and 1.65421 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 12.2205 seconds 
+
+current simulated time: 48 min (max: 120 min)
+total agents: 1286
+interval wall time: 0 days, 0 hours, 0 minutes, and 1.68318 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 13.9037 seconds 
+
+current simulated time: 54 min (max: 120 min)
+total agents: 1292
+interval wall time: 0 days, 0 hours, 0 minutes, and 1.61048 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 15.5142 seconds 
+
+current simulated time: 60 min (max: 120 min)
+total agents: 1294
+interval wall time: 0 days, 0 hours, 0 minutes, and 1.69569 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 17.2099 seconds 
+
+current simulated time: 66 min (max: 120 min)
+total agents: 1299
+interval wall time: 0 days, 0 hours, 0 minutes, and 1.73527 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 18.9451 seconds 
+
+current simulated time: 72 min (max: 120 min)
+total agents: 1303
+interval wall time: 0 days, 0 hours, 0 minutes, and 1.62865 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 20.5738 seconds 
+
+current simulated time: 78 min (max: 120 min)
+total agents: 1306
+interval wall time: 0 days, 0 hours, 0 minutes, and 1.73972 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 22.3135 seconds 
+
+current simulated time: 84 min (max: 120 min)
+total agents: 1308
+interval wall time: 0 days, 0 hours, 0 minutes, and 1.70751 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 24.021 seconds 
+
+current simulated time: 90 min (max: 120 min)
+total agents: 1311
+interval wall time: 0 days, 0 hours, 0 minutes, and 1.62797 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 25.649 seconds 
+
+current simulated time: 96 min (max: 120 min)
+total agents: 1315
+interval wall time: 0 days, 0 hours, 0 minutes, and 1.68035 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 27.3294 seconds 
+
+current simulated time: 102 min (max: 120 min)
+total agents: 1317
+interval wall time: 0 days, 0 hours, 0 minutes, and 1.65571 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 28.9851 seconds 
+
+current simulated time: 108 min (max: 120 min)
+total agents: 1319
+interval wall time: 0 days, 0 hours, 0 minutes, and 1.73594 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 30.7211 seconds 
+
+current simulated time: 114 min (max: 120 min)
+total agents: 1322
+interval wall time: 0 days, 0 hours, 0 minutes, and 1.69222 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 32.4133 seconds 
+
+current simulated time: 120 min (max: 120 min)
+total agents: 1326
+interval wall time: 0 days, 0 hours, 0 minutes, and 1.5894 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 34.0027 seconds 
+
+
+Total simulation runtime: 
+0 days, 0 hours, 0 minutes, and 34.1664 seconds 
