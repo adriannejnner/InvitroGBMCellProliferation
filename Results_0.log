@@ -1,0 +1,99 @@
+Using config file Results_0\config.xml ... 
+User parameters in XML config file: 
+Bool parameters:: 
+
+Int parameters:: 
+random_seed: 0 [dimensionless]
+initial_GBM_cells: 1255 [cells]
+TH_migration_speed: 4 [micron/min]
+CTL_migration_speed: 4 [micron/min]
+initial_stroma_cells: 0 [cells]
+chemokine_saturation_density: 5 [ng/micron]
+
+Double parameters:: 
+tumor_radius: 900 [micron]
+tumour_radius_initial: 1270 [micron]
+virus_saturation_density: 268.51 [virus/micron]
+initial_virus_density: 3.0248 [dimensionless]
+GBM_virus_uptake_rate: 0.002 [1/min]
+infection_threshold: 10 [1/min]
+virus_replication_rate: 0.0081 [1/min]
+virus_burst_number: 5629.05 [virus]
+pmax: 0.0125 [virus]
+viral_decay_from_burst_cell: 0.1466 [virus]
+GBM_cell_proliferation_rate: 0.00073549 [1/min]
+chemokine_secretion_rate: 0.0417 [1/min]
+chemokine_secretion_rate: 0.0417 [1/min]
+TH_prolif_increase_due_to_stimulus: 5 [dimensionless]
+TH_prolif_rate: 7.9026e-05 [dimensionless]
+TH_quiescent_transistion_rate: 0.00143 [dimensionless]
+CTL_prolif_rate: 7.9026e-05 [dimensionless]
+CTL_quiescent_transistion_rate: 0.00143 [dimensionless]
+CTL_prolif_increase_due_to_stimulus: 100 [dimensionless]
+max_attachment_distance: 50 [1/min]
+CTL_max_speed: 24.6 [micron/min]
+CTL_min_speed: 4 [micron/min]
+CTL_chemokine_migration_bias: 0.85 [dimensionless]
+time_to_kill_cell: 50 [dimensionless]
+stroma_virus_uptake_rate: 1 [1/min]
+stroma_radius: 7.5 [micron]
+elastic_coefficient: 0.01 [1/min]
+maximum_cell_density: 0.0039 [cell/micron]
+Chemokine_EC50: 0.005 [dimensionless]
+
+String parameters:: 
+
+
+
+Microenvironment summary: microenvironment: 
+
+Mesh information: 
+type: uniform Cartesian
+Domain: [-1500,1500] micron x [-1500,1500] micron x [-10,10] micron
+   resolution: dx = 20 micron
+   voxels: 22500
+   voxel faces: 0
+   volume: 1.8e+08 cubic micron
+Densities: (4 total)
+   oxygen:
+     units: mmHg
+     diffusion coefficient: 4 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 2e+06 micron
+     initial condition: 0 mmHg
+     boundary condition: 0 mmHg (enabled: false)
+   virus:
+     units: mmHg
+     diffusion coefficient: 1.4766 micron^2 / min
+     decay rate: 0.0029 min^-1
+     diffusion length scale: 22.5648 micron
+     initial condition: 0 mmHg
+     boundary condition: 0 mmHg (enabled: true)
+   wall:
+     units: mmHg
+     diffusion coefficient: 0 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 0 micron
+     initial condition: 0 mmHg
+     boundary condition: 0 mmHg (enabled: true)
+   chemokine:
+     units: mmHg
+     diffusion coefficient: 555.56 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 2.35703e+07 micron
+     initial condition: 0 mmHg
+     boundary condition: 0 mmHg (enabled: true)
+
+Using PhysiCell version 1.6.0
+	Please cite DOI: 10.1371/journal.pcbi.1005991
+	Project website: http://PhysiCell.MathCancer.org
+
+See ALL_CITATIONS.txt for this list.
+current simulated time: 0 min (max: 5760 min)
+total agents: 1316
+interval wall time: 0 days, 0 hours, 0 minutes, and 1.73e-05 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 2.36e-05 seconds 
+
+
+Using method diffusion_decay_solver__constant_coefficients_LOD_2D (2D LOD with Thomas Algorithm) ... 
+
