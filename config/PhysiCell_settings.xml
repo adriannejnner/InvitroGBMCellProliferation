@@ -74,10 +74,10 @@
 
 <PhysiCell_settings version="devel-version">
 	<domain>
-		<x_min>-1500</x_min>
-		<x_max>1500</x_max>
-		<y_min>-1500</y_min>
-		<y_max>1500</y_max>
+		<x_min>-500</x_min>
+		<x_max>500</x_max>
+		<y_min>-500</y_min>
+		<y_max>500</y_max>
 		<z_min>-10</z_min>
 		<z_max>10</z_max>
 		<dx>20</dx>
@@ -87,25 +87,25 @@
 	</domain>
 	
 	<overall>
-		<max_time units="min">120</max_time> <!-- 5760 -->
+		<max_time units="min">5760</max_time> <!-- 5760 -->
 		<time_units>min</time_units>
 		<space_units>micron</space_units>
 	</overall>
 	
 	<parallel>
-		<omp_num_threads>1</omp_num_threads>
+		<omp_num_threads>8</omp_num_threads>
 	</parallel> 
 	
 	<save>
 		<folder>output</folder> <!-- use . for root --> 
 
 		<full_data>
-			<interval units="min">30</interval>
+			<interval units="min">1440</interval>
 			<enable>true</enable>
 		</full_data>
 		
 		<SVG>
-			<interval units="min">30</interval>
+			<interval units="min">1440</interval>
 			<enable>true</enable>
 		</SVG>
 		
@@ -199,8 +199,8 @@
 	</microenvironment_setup>	
 	
 	<user_parameters>
-		<tumor_radius type="double" units="micron">900</tumor_radius><!-- 1270-->
-		<tumour_radius_initial type="double" units="micron">1270</tumour_radius_initial>
+		<tumor_radius type="double" units="micron">500</tumor_radius><!-- 1270-->
+		<tumour_radius_initial type="double" units="micron">500</tumour_radius_initial>
 		<random_seed type="int" units="dimensionless">0</random_seed>
 		
 		<!-- for virus -->
@@ -214,8 +214,8 @@
 		<viral_decay_from_burst_cell type="double" units="virus">0.1466</viral_decay_from_burst_cell>
 		
 		<!-- for cancer cells -->
-		<initial_GBM_cells type="int" units="cells">1255</initial_GBM_cells> <!-- 12556   5580-->
-		<GBM_cell_proliferation_rate type="double" units="1/min">0.00073549</GBM_cell_proliferation_rate>		
+		<initial_GBM_cells type="int" units="cells">347</initial_GBM_cells> <!-- 12556   5580-->
+		<GBM_cell_proliferation_rate type="double" units="1/min">0.000573549</GBM_cell_proliferation_rate>		
 			
 		<!-- for TH cells -->
 		<TH_migration_speed type="int" units="micron/min">4</TH_migration_speed>
