@@ -39,7 +39,7 @@ first_time = True
 output_dirs = []
 
 # load data points to compare to number of cells
-data_vec = np.array([50000, 890000, 115000, 124000, 145000])
+data_vec = np.array([347, 618, 799, 861, 1007]) # simulating only 0.0069 of the dish
      
 count = 0
 while count < 50:
@@ -63,8 +63,8 @@ while count < 50:
     
     # set parameter values to simulate
     key = 'GBM_cell_proliferation_rate'
-    val = str(random()*0.00073549)
-    
+    val = str(random()*0.000573549)
+        
     try:
         xml_root.find('.//' + key).text = val
     except:
